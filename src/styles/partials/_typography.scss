@@ -1,0 +1,26 @@
+// _typography.scss
+
+// Font Variables
+$font-family-primary: 'Arial', sans-serif;
+
+// Typography Mixins
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+@mixin font-family($family) {
+    font-family: $family;
+}
+
+// Typography Styles
+h1, h2, h3, h4, h5, h6 {
+    @include font-family($font-family-primary);
+    color: $instock-blue;
+}
+
+p {
+    @include font-family($font-family-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $instock-black;
+}

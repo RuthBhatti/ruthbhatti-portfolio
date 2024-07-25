@@ -1,0 +1,269 @@
+.projects-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3.6rem 0;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    &.blurred .circle {
+        animation: none;
+        filter: blur(5px);
+    }
+
+    &.details-view {
+        .projects-list {
+            display: none;
+        }
+
+        .project-details {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    .projects-list {
+        height: 16rem;
+        width: 40%;
+        background: rgba(0, 0, 0, 0.7); // Updated for black transparent background
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: white; // Updated for white text color
+        position: relative;
+        z-index: 2; // Make sure it's above the circles
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .project-name {
+            font-size: 1.2rem;
+            padding: 10px 0;
+            cursor: pointer;
+            position: relative;
+            color: white; // Updated for white text color
+
+            &:hover {
+                color: #ff007f;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                background: #ccc;
+                width: calc(100% + 20px);
+                left: -10px;
+            }
+
+            &:before {
+                top: 0;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+
+            &.active {
+                color: #ff007f; // Updated for pink active color
+            }
+        }
+    }
+
+    .project-details {
+        height: fit-content;
+        width: 70%;
+        background: rgba(0, 0, 0, 0.7); // Updated for black transparent background
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+        color: white; // Updated for white text color
+        position: relative;
+        z-index: 2; // Make sure it's above the circles
+
+        .details-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .text-content {
+                max-width: 60%;
+            }
+
+            .carousel-container {
+                width: 35%;
+                margin-top: 0;
+
+                .carousel .slide img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .carousel .control-arrow {
+                    background: none;
+                    border: none;
+                    color: white;
+                }
+
+                .carousel .control-dots {
+                    display: none; // Hide the dots underneath the images
+                }
+            }
+
+            .close-button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+                position: absolute;
+                top: 7px;
+                right: 7px;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #ff007f; // Updated for pink organization color
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: white; // Updated for white text color
+        }
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        animation: moveClouds 30s linear infinite;
+        transition: all 0.5s;
+        width: 250px;
+        height: 250px;
+
+        &:hover {
+            clip-path: url(#cloud-shape);
+        }
+    }
+
+    .circle-1 {
+        top: 5%;
+        left: 10%;
+        background: rgba(255, 182, 193, 0.8);
+    }
+
+    // Light Pink
+    .circle-2 {
+        top: 15%;
+        left: 70%;
+        background: rgba(255, 105, 180, 0.8);
+    }
+
+    // Hot Pink
+    .circle-3 {
+        top: 75%;
+        left: 15%;
+        background: rgba(219, 112, 147, 0.8);
+    }
+
+    // Pale Violet Red
+    .circle-4 {
+        top: 25%;
+        left: 45%;
+        background: rgba(176, 196, 222, 0.8);
+    }
+
+    // Light Steel Blue
+    .circle-5 {
+        top: 55%;
+        left: 5%;
+        background: rgba(173, 216, 230, 0.8);
+    }
+
+    // Light Blue
+    .circle-6 {
+        top: 65%;
+        left: 85%;
+        background: rgba(135, 206, 250, 0.8);
+    }
+
+    // Light Sky Blue
+    .circle-7 {
+        top: 35%;
+        left: 25%;
+        background: rgba(175, 238, 238, 0.8);
+    }
+
+    // Pale Turquoise
+    .circle-8 {
+        top: 45%;
+        left: 60%;
+        background: rgba(152, 251, 152, 0.8);
+    }
+
+    // Pale Green
+    .circle-9 {
+        top: 85%;
+        left: 20%;
+        background: rgba(211, 255, 206, 0.8);
+    }
+
+    // Mint Cream
+    .circle-10 {
+        top: 15%;
+        left: 40%;
+        background: rgba(221, 160, 221, 0.8);
+    }
+
+    // Plum
+
+    @keyframes moveClouds {
+        0% {
+            transform: translateX(0) translateY(0);
+        }
+
+        50% {
+            transform: translateX(50px) translateY(50px);
+        }
+
+        100% {
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    .blurred-background {
+        filter: blur(5px);
+    }
+}
+
+.carousel * {
+    border-radius: 10%;
+}
