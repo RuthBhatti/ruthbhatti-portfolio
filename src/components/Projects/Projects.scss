@@ -1,3 +1,5 @@
+@import '../../styles/partials/mixins';
+
 .projects-container {
     display: flex;
     flex-direction: row-reverse;
@@ -12,7 +14,7 @@
 
     &.blurred .circle {
         animation: none;
-        filter: blur(5px);
+        filter: blur(.3125rem);
     }
 
     &.details-view {
@@ -30,22 +32,22 @@
         height: 16rem;
         width: 40%;
         background: rgba(0, 0, 0, 0.7); // Updated for black transparent background
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1.25rem;
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
         color: white; // Updated for white text color
         position: relative;
         z-index: 2; // Make sure it's above the circles
 
         h1 {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
             font-family: 'Arial', sans-serif;
         }
 
         .project-name {
             font-size: 1.2rem;
-            padding: 10px 0;
+            padding: .625rem 0;
             cursor: pointer;
             position: relative;
             color: white; // Updated for white text color
@@ -54,18 +56,15 @@
                 color: #ff007f;
             }
 
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
 
             &:before,
             &:after {
                 content: '';
                 position: absolute;
-                height: 1px;
+                height: .0625rem;
                 background: #ccc;
-                width: calc(100% + 20px);
-                left: -10px;
+                width: calc(100% + 1.25rem);
+                left: -0.625rem;
             }
 
             &:before {
@@ -86,18 +85,28 @@
         height: fit-content;
         width: 70%;
         background: rgba(0, 0, 0, 0.7); // Updated for black transparent background
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-right: 20px;
+        padding: 1.25rem;
+        border-radius: .625rem;
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
+        margin-right: 1.25rem;
         color: white; // Updated for white text color
         position: relative;
         z-index: 2; // Make sure it's above the circles
 
         .details-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            @include tablet {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+
+            @include desktop {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                gap: 2rem;
+            }
 
             .text-content {
                 max-width: 60%;
@@ -130,26 +139,26 @@
                 font-size: 1rem;
                 cursor: pointer;
                 position: absolute;
-                top: 7px;
-                right: 7px;
+                top: .4375rem;
+                right: .4375rem;
             }
         }
 
         h2 {
             font-size: 2rem;
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
             font-family: 'Arial', sans-serif;
         }
 
         h3 {
             font-size: 1.5rem;
-            margin-bottom: 5px;
+            margin-bottom: .3125rem;
             font-family: 'Arial', sans-serif;
         }
 
         h4 {
             font-size: 1.2rem;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
             font-family: 'Arial', sans-serif;
             color: #ff007f; // Updated for pink organization color
         }
@@ -166,8 +175,8 @@
         border-radius: 50%;
         animation: moveClouds 30s linear infinite;
         transition: all 0.5s;
-        width: 250px;
-        height: 250px;
+        width: 15.625rem;
+        height: 15.625rem;
 
         &:hover {
             clip-path: url(#cloud-shape);
@@ -251,7 +260,7 @@
         }
 
         50% {
-            transform: translateX(50px) translateY(50px);
+            transform: translateX(3.125rem) translateY(3.125rem);
         }
 
         100% {
@@ -260,10 +269,15 @@
     }
 
     .blurred-background {
-        filter: blur(5px);
+        filter: blur(.3125rem);
     }
 }
 
 .carousel * {
     border-radius: 10%;
+}
+
+.carousel-1 {
+    height: fit-content;
+    width: fit-content;
 }

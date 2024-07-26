@@ -1,3 +1,5 @@
+@import '../../styles/partials/mixins';
+
 .home {
     display: flex;
     justify-content: center;
@@ -11,6 +13,14 @@
     .content {
         text-align: center;
         z-index: 10;
+        font-family: 'Ballingtone Shadow';
+        font-size: medium;
+        @include tablet{
+            font-size: x-large;
+        }
+        @include desktop{
+            font-size: xx-large;
+        }
     }
 
     a:-webkit-any-link {

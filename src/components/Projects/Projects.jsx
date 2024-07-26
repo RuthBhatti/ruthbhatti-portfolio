@@ -108,26 +108,28 @@ const Projects = () => {
                                 <img src={githubLogo} alt="GitHub Repository" style={{ width: '49px', height: '49px' }} />
                             </Link>
                         </div>
-                        {selectedProject.images.length > 0 && (
-                            <Carousel
-                                showArrows={true}
-                                infiniteLoop={false}
-                                autoPlay={!carouselStopped}
-                                dynamicHeight={true}
-                                showThumbs={false}
-                                showStatus={false}
-                                className="carousel-container"
-                                selectedItem={carouselIndex}
-                                onChange={handleCarouselChange}
-                                onClickItem={handleCarouselClick}
-                            >
-                                {selectedProject.images.map((image, index) => (
-                                    <div key={index}>
-                                        <img src={image} alt={`Slide ${index}`} />
-                                    </div>
-                                ))}
-                            </Carousel>
-                        )}
+                        {/* <div className='Carousel-1'> */}
+                            {selectedProject.images.length > 0 && (
+                                <Carousel
+                                    showArrows={true}
+                                    infiniteLoop={false}
+                                    autoPlay={!carouselStopped}
+                                    dynamicHeight={true}
+                                    showThumbs={false}
+                                    showStatus={false}
+                                    className="carousel-container"
+                                    selectedItem={carouselIndex}
+                                    onChange={handleCarouselChange}
+                                    onClickItem={handleCarouselClick}
+                                >
+                                    {selectedProject.images.map((image, index) => (
+                                        <div key={index}>
+                                            <img src={image} alt={`Slide ${index}`} />
+                                        </div>
+                                    ))}
+                                </Carousel>
+                            )}
+                            {/* </div> */}
                         <button className="close-button" onClick={() => setSelectedProject(null)}>X</button>
                     </div>
                     <p>{selectedProject.description}</p>
