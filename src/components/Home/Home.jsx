@@ -23,7 +23,7 @@ const Home = () => {
                 <h1>Hey, I'm Ruth Bhatti</h1>
                 <p>I'm a software engineer and project manager.</p>
                 <p>
-                    <a className='projects' href="/projects">see my projects</a> → <a href="/about">more about me</a>
+                    <a className='projects' href="main--ruthbhatti.netlify.app/projects">see my projects</a> → <a href="main--ruthbhatti.netlify.app/about">more about me</a>
                 </p>
             </div>
         </div>
