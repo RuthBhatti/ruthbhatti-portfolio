@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Projects.scss';
-import image0 from '../../../src/assets/images/pawvage-images/Page-0.jpg';
 import image1 from '../../../src/assets/images/pawvage-images/Page-1.png';
 import image2 from '../../../src/assets/images/pawvage-images/Page-2.png';
 import image3 from '../../../src/assets/images/pawvage-images/Page-3.png';
@@ -19,8 +18,6 @@ import image12 from '../../../src/assets/images/pawvage-images/Page-12.png';
 import image13 from '../../../src/assets/images/pawvage-images/Page-13.png';
 import image14 from '../../../src/assets/images/pawvage-images/Page-14.png';
 import image15 from '../../../src/assets/images/pawvage-images/Page-15.png';
-import image16 from '../../../src/assets/images/pawvage-images/Page-16.png';
-import image17 from '../../../src/assets/images/pawvage-images/Page-17.png';
 
 import titansImage1 from '../../../src/assets/images/titans/google-page-1.png';
 import titansImage2 from '../../../src/assets/images/titans/google-page-2.png';
@@ -40,7 +37,7 @@ const projects = [
         role: "Full Stack Developer",
         organization: "BrainStation",
         description: "Developing a React Native/Node.js/Express/MongoDB mobile application designed to assist pet owners in traveling internationally with their pets by providing a seamless, step-by-step application process for pet visas. Creating a user-friendly interface that guides users through submitting the necessary documentation to relevant departments in the origin and destination countries, ensuring approval without any hassle. Implementing a backend API to simulate form submissions to government agencies and ensure data persistence. Enhancing the app to support all animals that can travel in future updates, not just dogs. Acquired proficiency in React Native within two weeks to effectively develop this application.",
-        images: [image0, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17],
+        images: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15],
         URL: "https://github.com/RuthBhatti/PawVage"
     },
     {

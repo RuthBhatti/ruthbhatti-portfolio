@@ -37,14 +37,14 @@ body {
 
     .mobile-carousel {
         width: 80%;
-        max-width: 300px;
+        max-width: 18.75rem;
         margin-bottom: 1.25rem;
 
         .carousel .slide img {
             border-radius: 50%;
             width: 100%;
             height: auto;
-            max-height: 300px;
+            max-height: 18.75rem;
             object-fit: cover;
         }
 
@@ -86,7 +86,7 @@ body {
     .desktop-carousel {
         display: none;
         width: 40%;
-        max-width: 300px;
+        max-width: 18.75rem;
         justify-content: center;
         align-items: center;
 
@@ -94,7 +94,7 @@ body {
             border-radius: 50%;
             width: 100%;
             height: auto;
-            max-height: 300px;
+            max-height: 18.75rem;
             object-fit: cover;
         }
 
