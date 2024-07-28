@@ -1,4 +1,5 @@
 @import '../../styles/partials/mixins';
+@import '../../styles/partials/typography';
 
 .home {
     display: flex;
@@ -13,12 +14,14 @@
     .content {
         text-align: center;
         z-index: 10;
-        font-family: 'Ballingtone Shadow';
+        // font-family: 'Ballingtone Shadow';
         font-size: medium;
-        @include tablet{
+
+        @include tablet {
             font-size: x-large;
         }
-        @include desktop{
+
+        @include desktop {
             font-size: xx-large;
         }
     }
@@ -28,6 +31,25 @@
         color: white;
         font-size: larger;
         font-weight: bolder;
+    }
+
+    .home-title {
+        font-size: 3rem; // Adjust as needed
+        letter-spacing: 1em; // Add space between letters
+
+        @include tablet {
+            font-size: 4rem; // Adjust as needed
+        }
+
+        @include desktop {
+            font-size: 5rem; // Adjust as needed
+        }
+
+        span.capital-letter {
+            font-family: 'VTKS-DEJA-VU', sans-serif;
+            font-size: inherit;
+            letter-spacing: inherit;
+        }
     }
 
     .background-circles {
@@ -51,7 +73,6 @@
                 box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.7);
             }
         }
-
 
         .circle1 {
             width: 12.5rem;

@@ -1,7 +1,16 @@
 // _typography.scss
-
+@import '../../styles/partials/variables';
 // Font Variables
 $font-family-primary: 'Arial', sans-serif;
+$font-family-secondary:'VTKS-DEJA-VU', sans-serif;
+
+// Custom Font
+@font-face {
+    font-family: 'VTKS-DEJA-VU';
+    src: url('../../assets/fonts/FontsFree-Net-Ballingtone-Shadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // Typography Mixins
 @mixin font-size($size) {
@@ -14,13 +23,19 @@ $font-family-primary: 'Arial', sans-serif;
 
 // Typography Styles
 h1, h2, h3, h4, h5, h6 {
-    @include font-family($font-family-primary);
-    color: $instock-blue;
+    @include font-family($font-family-secondary);
+    color: $instock-white;
+    letter-spacing: .2rem;
 }
 
 p {
     @include font-family($font-family-primary);
     font-size: 1rem;
     line-height: 1.6;
-    color: $instock-black;
+    color: $instock-white;
+}
+
+// Custom Styles for Specific Text
+.capital-letter {
+    font-family: 'VTKS-DEJA-VU', sans-serif;
 }
