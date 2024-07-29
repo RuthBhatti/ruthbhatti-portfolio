@@ -21,7 +21,7 @@ const Contact = () => {
                         <a href="https://www.linkedin.com/in/ruth-bhatti/" target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="LinkedIn" />
                         </a>
-                        <a href="tel:+15163046066">
+                        <a href="tel:+15169264077">
                             <img src={phone} alt="Phone" />
                         </a>
                     </div>
