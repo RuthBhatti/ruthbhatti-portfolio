@@ -11,189 +11,210 @@
     overflow: hidden;
     background: black;
 
-    .content {
-        text-align: center;
-        z-index: 10;
-        // font-family: 'Ballingtone Shadow';
-        font-size: medium;
+    .projects-about {
+        display: flex;
+        flex-direction: column;
 
         @include tablet {
-            font-size: x-large;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
         }
 
         @include desktop {
-            font-size: xx-large;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
         }
     }
+}
 
-    a:-webkit-any-link {
-        text-decoration: none;
-        color: white;
-        font-size: larger;
-        font-weight: bolder;
+.content {
+    text-align: center;
+    z-index: 10;
+    // font-family: 'Ballingtone Shadow';
+    font-size: medium;
+
+    @include tablet {
+        font-size: x-large;
     }
 
-    .home-title {
-        font-size: 3rem; // Adjust as needed
-        letter-spacing: 1em; // Add space between letters
+    @include desktop {
+        font-size: xx-large;
+    }
+}
 
-        @include tablet {
-            font-size: 4rem; // Adjust as needed
-        }
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
 
-        @include desktop {
-            font-size: 5rem; // Adjust as needed
-        }
+.home-title {
+    font-size: 3rem; // Adjust as needed
+    letter-spacing: 1em; // Add space between letters
 
-        span.capital-letter {
-            font-family: 'VTKS-DEJA-VU', sans-serif;
-            font-size: inherit;
-            letter-spacing: inherit;
-        }
+    @include tablet {
+        font-size: 4rem; // Adjust as needed
     }
 
-    .background-circles {
+    @include desktop {
+        font-size: 5rem; // Adjust as needed
+    }
+
+    span.capital-letter {
+        font-family: 'VTKS-DEJA-VU', sans-serif;
+        font-size: inherit;
+        letter-spacing: inherit;
+    }
+}
+
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+    .shape {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: 1;
+        border-radius: 50%;
+        opacity: 0.4; // Adjusted opacity for a lighter effect
+        transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
 
-        .shape {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.8;
-            transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        &:hover {
+            border-radius: 10%;
+            transform: scale(1.1) translateZ(3.125rem);
+            box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.7);
+        }
+    }
 
-            &:hover {
-                border-radius: 10%;
-                transform: scale(1.1) translateZ(3.125rem);
-                box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.7);
-            }
+    .circle1 {
+        width: 12.5rem;
+        height: 12.5rem;
+        top: 10%;
+        left: 15%;
+        background: linear-gradient(135deg, #FF007F, #FF4500);
+    }
+
+    .circle2 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 30%;
+        left: 55%;
+        background: linear-gradient(135deg, #FF4500, #FFD700);
+    }
+
+    .circle3 {
+        width: 15.625rem;
+        height: 15.625rem;
+        top: 60%;
+        left: 25%;
+        background: linear-gradient(135deg, #FFD700, #7FFF00);
+    }
+
+    .circle4 {
+        width: 25rem;
+        height: 25rem;
+        top: 50%;
+        left: 70%;
+        background: linear-gradient(135deg, #7FFF00, #00FFFF);
+    }
+
+    .circle5 {
+        width: 9.375rem;
+        height: 9.375rem;
+        top: 80%;
+        left: 45%;
+        background: linear-gradient(135deg, #00FFFF, #0000FF);
+    }
+
+    .circle6 {
+        width: 13.75rem;
+        height: 13.75rem;
+        top: 20%;
+        left: 75%;
+        background: linear-gradient(135deg, #0000FF, #8A2BE2);
+    }
+
+    .circle7 {
+        width: 11.25rem;
+        height: 11.25rem;
+        top: 40%;
+        left: 5%;
+        background: linear-gradient(135deg, #8A2BE2, #FF007F);
+    }
+
+    .circle8 {
+        width: 17.5rem;
+        height: 17.5rem;
+        top: 70%;
+        left: 35%;
+        background: linear-gradient(135deg, #FF007F, #FF4500);
+    }
+
+    .design1 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 5%;
+        left: 10%;
+        background-image: url('/path/to/your/design1.png');
+    }
+
+    .design2 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 20%;
+        left: 60%;
+        background-image: url('/path/to/your/design2.png');
+    }
+
+    .design3 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 50%;
+        left: 30%;
+        background-image: url('/path/to/your/design3.png');
+    }
+
+    .design4 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 70%;
+        left: 80%;
+        background-image: url('/path/to/your/design4.png');
+    }
+
+    .design5 {
+        width: 18.75rem;
+        height: 18.75rem;
+        top: 85%;
+        left: 20%;
+        background-image: url('/path/to/your/design5.png');
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0) translateX(0) scale(1);
         }
 
-        .circle1 {
-            width: 12.5rem;
-            height: 12.5rem;
-            top: 10%;
-            left: 15%;
-            background: linear-gradient(135deg, #FF007F, #FF4500);
+        50% {
+            transform: translateY(-3.125rem) translateX(3.125rem) scale(1.2);
         }
 
-        .circle2 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 30%;
-            left: 55%;
-            background: linear-gradient(135deg, #FF4500, #FFD700);
+        100% {
+            transform: translateY(0) translateX(0) scale(1);
         }
+    }
 
-        .circle3 {
-            width: 15.625rem;
-            height: 15.625rem;
-            top: 60%;
-            left: 25%;
-            background: linear-gradient(135deg, #FFD700, #7FFF00);
-        }
-
-        .circle4 {
-            width: 25rem;
-            height: 25rem;
-            top: 50%;
-            left: 70%;
-            background: linear-gradient(135deg, #7FFF00, #00FFFF);
-        }
-
-        .circle5 {
-            width: 9.375rem;
-            height: 9.375rem;
-            top: 80%;
-            left: 45%;
-            background: linear-gradient(135deg, #00FFFF, #0000FF);
-        }
-
-        .circle6 {
-            width: 13.75rem;
-            height: 13.75rem;
-            top: 20%;
-            left: 75%;
-            background: linear-gradient(135deg, #0000FF, #8A2BE2);
-        }
-
-        .circle7 {
-            width: 11.25rem;
-            height: 11.25rem;
-            top: 40%;
-            left: 5%;
-            background: linear-gradient(135deg, #8A2BE2, #FF007F);
-        }
-
-        .circle8 {
-            width: 17.5rem;
-            height: 17.5rem;
-            top: 70%;
-            left: 35%;
-            background: linear-gradient(135deg, #FF007F, #FF4500);
-        }
-
-        .design1 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 5%;
-            left: 10%;
-            background-image: url('/path/to/your/design1.png');
-        }
-
-        .design2 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 20%;
-            left: 60%;
-            background-image: url('/path/to/your/design2.png');
-        }
-
-        .design3 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 50%;
-            left: 30%;
-            background-image: url('/path/to/your/design3.png');
-        }
-
-        .design4 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 70%;
-            left: 80%;
-            background-image: url('/path/to/your/design4.png');
-        }
-
-        .design5 {
-            width: 18.75rem;
-            height: 18.75rem;
-            top: 85%;
-            left: 20%;
-            background-image: url('/path/to/your/design5.png');
-        }
-
-        @keyframes move {
-            0% {
-                transform: translateY(0) translateX(0) scale(1);
-            }
-
-            50% {
-                transform: translateY(-3.125rem) translateX(3.125rem) scale(1.2);
-            }
-
-            100% {
-                transform: translateY(0) translateX(0) scale(1);
-            }
-        }
-
-        .shape {
-            animation: move 5s infinite alternate;
-        }
+    .shape {
+        animation: move 5s infinite alternate;
     }
 }

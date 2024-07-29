@@ -22,7 +22,7 @@ const Home = () => {
             <div className="content">
                 <h1>Hi, I'm Ruth Bhatti</h1>
                 <p>I'm a software engineer and project manager.</p>
-                <p>
+                <p className='projects-about'>
                     <a className='projects' href="/projects">see my projects</a> → <a href="/about">more about me</a>
                 </p>
             </div>
