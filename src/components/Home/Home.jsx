@@ -20,7 +20,7 @@ const Home = () => {
                 <div className="shape design5"></div>
             </div>
             <div className="content">
-                <h1>Hey, I'm Ruth Bhatti</h1>
+                <h1>Hi, I'm Ruth Bhatti</h1>
                 <p>I'm a software engineer and project manager.</p>
                 <p>
                     <a className='projects' href="/projects">see my projects</a> → <a href="/about">more about me</a>
