@@ -29,7 +29,8 @@ import titansImage7 from '../../../src/assets/images/titans/google-page-7.png';
 import titansImage8 from '../../../src/assets/images/titans/google-page-8.png';
 import titansImage9 from '../../../src/assets/images/titans/google-page-9.png';
 import titansImage10 from '../../../src/assets/images/titans/google-page-10.png';
-import githubLogo from '../../assets/images/github-logo.png'
+import githubLogo from '../../assets/images/github-logo.png';
+import linkedinLogo from '../../assets/images/linkedin-logo.png';
 
 const projects = [
     {
@@ -38,7 +39,8 @@ const projects = [
         organization: "BrainStation",
         description: "Developing a React Native/Node.js/Express/MongoDB mobile application designed to assist pet owners in traveling internationally with their pets by providing a seamless, step-by-step application process for pet visas. Creating a user-friendly interface that guides users through submitting the necessary documentation to relevant departments in the origin and destination countries, ensuring approval without any hassle. Implementing a backend API to simulate form submissions to government agencies and ensure data persistence. Enhancing the app to support all animals that can travel in future updates, not just dogs. Acquired proficiency in React Native within two weeks to effectively develop this application.",
         images: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15],
-        URL: "https://github.com/RuthBhatti/PawVage"
+        URL: "https://github.com/RuthBhatti/PawVage",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     },
     {
         name: "Titans",
@@ -46,7 +48,8 @@ const projects = [
         organization: "Google x BrainStation",
         description: "Worked with a cross-functional team to design educational components in Google Drive and Google Slides, enhancing user comprehension of the Gemini AI model. Led the creation of user-friendly features, such as an optional Gemini search button and informative pop-ups, to build user trust and transparency. Honorable Mention at BrainStation x Google Industry Project!",
         images: [titansImage1, titansImage2, titansImage3, titansImage4, titansImage5, titansImage6, titansImage7, titansImage8, titansImage9, titansImage10],
-        URL: "https://github.com/RuthBhatti/Titans"
+        URL: "https://github.com/RuthBhatti/Titans",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     }
 ];
 
@@ -101,35 +104,39 @@ const Projects = () => {
                             <h2>{selectedProject.name}</h2>
                             <h3>{selectedProject.role}</h3>
                             <h4>{selectedProject.organization}</h4>
-                            <Link to="#" onClick={(e) => { e.preventDefault(); window.open(selectedProject.URL, '_blank', 'noopener,noreferrer'); }}>
-                                <img src={githubLogo} alt="GitHub Repository" style={{ width: '49px', height: '49px' }} />
-                            </Link>
+                            <div>
+                                <Link to="#" onClick={(e) => { e.preventDefault(); window.open(selectedProject.URL, '_blank', 'noopener,noreferrer'); }}>
+                                    <img src={githubLogo} alt="GitHub Repository" style={{ width: '49px', height: '49px' }} />
+                                </Link>
+                                <Link to="#" onClick={(e) => { e.preventDefault(); window.open(selectedProject.linkedinURL, '_blank', 'noopener,noreferrer'); }}>
+                                    <img src={linkedinLogo} alt="LinkedIn Profile" style={{ width: '49px', height: '49px' }} />
+                                </Link>
+                            </div>
+                            <p className="project-description">{selectedProject.description}</p>
                         </div>
-                        {/* <div className='Carousel-1'> */}
-                            {selectedProject.images.length > 0 && (
-                                <Carousel
-                                    showArrows={true}
-                                    infiniteLoop={false}
-                                    autoPlay={!carouselStopped}
-                                    dynamicHeight={true}
-                                    showThumbs={false}
-                                    showStatus={false}
-                                    className="carousel-container"
-                                    selectedItem={carouselIndex}
-                                    onChange={handleCarouselChange}
-                                    onClickItem={handleCarouselClick}
-                                >
-                                    {selectedProject.images.map((image, index) => (
-                                        <div key={index}>
-                                            <img src={image} alt={`Slide ${index}`} />
-                                        </div>
-                                    ))}
-                                </Carousel>
-                            )}
-                            {/* </div> */}
+                        {selectedProject.images.length > 0 && (
+                            <Carousel
+                                showArrows={true}
+                                infiniteLoop={false}
+                                autoPlay={!carouselStopped}
+                                dynamicHeight={true}
+                                showThumbs={false}
+                                showStatus={false}
+                                className="carousel-container"
+                                selectedItem={carouselIndex}
+                                onChange={handleCarouselChange}
+                                onClickItem={handleCarouselClick}
+                            >
+                                {selectedProject.images.map((image, index) => (
+                                    <div key={index}>
+                                        <img src={image} alt={`Slide ${index}`} />
+                                    </div>
+                                ))}
+                            </Carousel>
+                        )}
                         <button className="close-button" onClick={() => setSelectedProject(null)}>X</button>
                     </div>
-                    <p>{selectedProject.description}</p>
+                    <p className="project-description-mobile">{selectedProject.description}</p>
                 </div>
             )}
             <div className="circle circle-1"></div>

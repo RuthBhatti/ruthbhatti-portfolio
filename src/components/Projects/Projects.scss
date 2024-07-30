@@ -45,7 +45,6 @@
         h1 {
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
-            // font-family: 'Arial', sans-serif;
         }
 
         .project-name {
@@ -94,29 +93,54 @@
         color: white;
         position: relative;
         z-index: 2;
+        text-align: center; // Center align for mobile
 
         .details-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             @include tablet {
-                display: flex;
+                flex-direction: row;
                 justify-content: space-around;
                 align-items: flex-start;
                 gap: 2rem;
+                text-align: left; // Left align for tablet and desktop
             }
 
             @include desktop {
-                display: flex;
+                flex-direction: row;
                 justify-content: space-around;
                 align-items: flex-start;
                 gap: 2rem;
+                text-align: left; // Left align for tablet and desktop
             }
 
             .text-content {
-                max-width: 60%;
+                // max-width: 60%;
+
+                @include tablet {
+                    max-width: 60%;
+                }
+
+                @include desktop {
+                    max-width: 60%;
+                }
             }
 
             .carousel-container {
-                width: 35%;
-                margin-top: 0;
+                width: 100%;
+                margin-top: 1rem;
+
+                @include tablet {
+                    width: 35%;
+                    margin-top: 0;
+                }
+
+                @include desktop {
+                    width: 35%;
+                    margin-top: 0;
+                }
 
                 .carousel .slide img {
                     width: 100%;
@@ -170,6 +194,37 @@
             font-size: 1rem;
             line-height: 1.6;
             color: white;
+            margin-top: 1rem; // Add some margin for spacing
+            display: none;
+
+            @include tablet {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: white;
+                margin-top: 1rem;
+                display: revert-layer;
+            }
+
+            @include desktop {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: white;
+                margin-top: 1rem;
+                display: revert-layer;
+            }
+        }
+
+        .project-description-mobile {
+            display: block;
+            text-align: -webkit-auto;
+
+            @include tablet {
+                display: none;
+            }
+
+            @include desktop {
+                display: none;
+            }
         }
     }
 
