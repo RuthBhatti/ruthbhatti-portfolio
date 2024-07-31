@@ -42,6 +42,15 @@ import bandSiteImage4 from '../../../src/assets/images/bandsite/Shows-Mobile.png
 import bandSiteImage5 from '../../../src/assets/images/bandsite/Shows-Tablet.png';
 import bandSiteImage6 from '../../../src/assets/images/bandsite/Shows-Desktop.png';
 
+import brainFlixImage1 from '../../../src/assets/images/brainflix/Mobile-Home.png';
+import brainFlixImage2 from '../../../src/assets/images/brainflix/Tablet-Home.png';
+import brainFlixImage3 from '../../../src/assets/images/brainflix/Desktop-Home.png';
+import brainFlixImage4 from '../../../src/assets/images/brainflix/Mobile-Upload.png';
+import brainFlixImage5 from '../../../src/assets/images/brainflix/Tablet-Upload.png';
+import brainFlixImage6 from '../../../src/assets/images/brainflix/Desktop-Upload.png';
+
+
+
 import githubLogo from '../../assets/images/github-logo.png';
 import linkedinLogo from '../../assets/images/linkedin-logo.png';
 
@@ -81,8 +90,17 @@ const projects = [
         "images": [bandSiteImage1, bandSiteImage2, bandSiteImage3, bandSiteImage4, bandSiteImage5, bandSiteImage6],
         "URL": "https://github.com/RuthBhatti/ruth-bhatti-bandsite",
         "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
+    },
+    {
+        "name": "BrainFlix",
+        "role": "Front End Developer",
+        "organization": "Self-Project",
+        "description": "Developed an interactive and user-friendly video streaming platform using SCSS, JavaScript, and HTML. Focused on delivering a seamless user experience with a responsive layout that adapts to various devices. The platform features a home page with a list of videos, a video details page with comments, and a video upload page. Implemented dynamic functionalities such as video playback, comment posting, and video uploads, enhancing the overall user engagement.",
+        "images": [brainFlixImage1, brainFlixImage2, brainFlixImage3, brainFlixImage4,brainFlixImage5,brainFlixImage6],
+        "URL": "https://github.com/RuthBhatti/ruth-bhatti-brainflix.git",
+        "backend": "https://github.com/RuthBhatti/ruth-bhatti-brainflix-api",
+        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
     }
-
 ];
 
 const Projects = () => {
