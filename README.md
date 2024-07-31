@@ -2,15 +2,13 @@
   <h1>💼 Ruth Bhatti Portfolio</h1>
 </div>
 
-## 📖 Project Overview
-
-The Ruth Bhatti Portfolio is a personal website designed to showcase my skills, projects, and professional background. The website features sections for my bio, projects, skills, and contact information, providing a comprehensive view of my work as a software engineer and project manager.
+Ruth Bhatti Portfolio showcases a collection of my projects, skills, and experiences as a front-end developer. This portfolio is built to highlight my journey in web development, featuring responsive design and interactive elements.
 
 ## 🚀 Features
 
-- **Responsive Design:** The website adapts seamlessly to various devices, providing an optimal viewing experience on mobile, tablet, and desktop.
-- **Project Showcase:** Detailed sections for each project, highlighting the technologies used and providing links to the source code.
-- **Interactive Elements:** Smooth hover effects, transitions, and interactive components to enhance user engagement.
+- **🖥️ Project Showcase:** Displays a detailed portfolio of my projects, including descriptions, technologies used, and live links.
+- **📄 Resume Section:** Provides a downloadable version of my resume.
+- **📬 Contact Form:** Allows visitors to get in touch with me directly through the website.
 
 ## 🛠️ Getting Started
 
@@ -45,11 +43,15 @@ The development server will start on `http://localhost:3000`.
 ## 🛠️ Technologies Used
 
 - **React:** For building the user interface.
-- **Vite:** As the build tool for faster development.
-- **SCSS:** For advanced styling with variables and mixins.
-- **HTML:** Structuring the web content.
-- **JavaScript:** Adding interactivity and dynamic content.
+- **SCSS:** For styling the application.
+- **JavaScript:** For interactive elements and dynamic content.
+- **HTML:** For structuring the content.
+- **Vite:** For fast development and build processes.
 
-## 📬 Contact
+## 📜 License
 
-For any inquiries, please reach out to me on [LinkedIn](https://www.linkedin.com/in/ruth-bhatti/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+For any inquiries or support, please contact Ruth Bhatti via [LinkedIn](https://www.linkedin.com/in/ruth-bhatti/).
