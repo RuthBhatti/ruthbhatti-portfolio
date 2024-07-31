@@ -29,6 +29,19 @@ import titansImage7 from '../../../src/assets/images/titans/google-page-7.png';
 import titansImage8 from '../../../src/assets/images/titans/google-page-8.png';
 import titansImage9 from '../../../src/assets/images/titans/google-page-9.png';
 import titansImage10 from '../../../src/assets/images/titans/google-page-10.png';
+
+import coffeeShopImage1 from '../../../src/assets/images/nitro-coffee/coffeeShopImage1.png';
+import coffeeShopImage2 from '../../../src/assets/images/nitro-coffee/coffeeShopImage2.png';
+import coffeeShopImage3 from '../../../src/assets/images/nitro-coffee/coffeeShopImage3.png';
+
+import bandSiteImage1 from '../../../src/assets/images/bandsite/Biography-Mobile.png';
+import bandSiteImage2 from '../../../src/assets/images/bandsite/Biography-Tablet.png';
+import bandSiteImage3 from '../../../src/assets/images/bandsite/Biography-Desktop.png';
+
+import bandSiteImage4 from '../../../src/assets/images/bandsite/Shows-Mobile.png';
+import bandSiteImage5 from '../../../src/assets/images/bandsite/Shows-Tablet.png';
+import bandSiteImage6 from '../../../src/assets/images/bandsite/Shows-Desktop.png';
+
 import githubLogo from '../../assets/images/github-logo.png';
 import linkedinLogo from '../../assets/images/linkedin-logo.png';
 
@@ -37,7 +50,7 @@ const projects = [
         name: "PawVoyage",
         role: "Full Stack Developer",
         organization: "BrainStation",
-        description: "Developing a React Native/Node.js/Express/MongoDB mobile application designed to assist pet owners in traveling internationally with their pets by providing a seamless, step-by-step application process for pet visas. Creating a user-friendly interface that guides users through submitting the necessary documentation to relevant departments in the origin and destination countries, ensuring approval without any hassle. Implementing a backend API to simulate form submissions to government agencies and ensure data persistence. Enhancing the app to support all animals that can travel in future updates, not just dogs. Acquired proficiency in React Native within two weeks to effectively develop this application.",
+        description: "Developing a React Native,Node.js,Express,MongoDB mobile application designed to assist pet owners in traveling internationally with their pets by providing a seamless, step-by-step application process for pet visas. Creating a user-friendly interface that guides users through submitting the necessary documentation to relevant departments in the origin and destination countries, ensuring approval without any hassle. Implementing a backend API to simulate form submissions to government agencies and ensure data persistence. Enhancing the app to support all animals that can travel in future updates, not just dogs. Acquired proficiency in React Native within two weeks to effectively develop this application.",
         images: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15],
         URL: "https://github.com/RuthBhatti/PawVage",
         linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
@@ -50,7 +63,26 @@ const projects = [
         images: [titansImage1, titansImage2, titansImage3, titansImage4, titansImage5, titansImage6, titansImage7, titansImage8, titansImage9, titansImage10],
         URL: "https://github.com/RuthBhatti/Titans",
         linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
+    },
+    {
+        name: "Nitro Coffee",
+        role: "Front End Developer",
+        organization: "Self-Project",
+        description: "Developed a responsive coffee shop website with a focus on user experience and seamless navigation. Implemented a visually appealing layout using HTML, CSS, and SCSS, ensuring compatibility across various devices. The website features a detailed menu, product showcase, and an integrated shopping cart system. It also includes dynamic elements like hover effects and transitions to enhance interactivity.",
+        images: [coffeeShopImage1, coffeeShopImage2, coffeeShopImage3],
+        URL: "https://github.com/RuthBhatti/updated-coffee-shop",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
+    },
+    {
+        "name": "BandSite",
+        "role": "Front End Developer",
+        "organization": "Self-Project",
+        "description": "Developed an engaging and responsive band website, utilizing SCSS, HTML, CSS, and JavaScript. Focused on delivering an immersive user experience through a visually captivating layout that is fully responsive across various devices. The website features sections such as Biography, Shows, and a Photo Gallery, enriched with dynamic content and interactive elements. Enhanced user interaction with smooth hover effects and transitions, ensuring a cohesive and enjoyable browsing experience.",
+        "images": [bandSiteImage1, bandSiteImage2, bandSiteImage3, bandSiteImage4, bandSiteImage5, bandSiteImage6],
+        "URL": "https://github.com/RuthBhatti/ruth-bhatti-bandsite",
+        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
     }
+
 ];
 
 const Projects = () => {
