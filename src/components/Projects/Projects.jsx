@@ -49,6 +49,11 @@ import brainFlixImage4 from '../../../src/assets/images/brainflix/Mobile-Upload.
 import brainFlixImage5 from '../../../src/assets/images/brainflix/Tablet-Upload.png';
 import brainFlixImage6 from '../../../src/assets/images/brainflix/Desktop-Upload.png';
 
+import jeopardyImage1 from '../../../src/assets/images/Jeopardy/Jeopardy-1.png'
+import jeopardyImage2 from '../../../src/assets/images/Jeopardy/Jeopardy-2.png'
+import jeopardyImage3 from '../../../src/assets/images/Jeopardy/Jeopardy-3.png'
+import jeopardyImage4 from '../../../src/assets/images/Jeopardy/Jeopardy-4.png'
+import jeopardyImage5 from '../../../src/assets/images/Jeopardy/Jeopardy-5.png'
 
 
 import githubLogo from '../../assets/images/github-logo.png';
@@ -93,12 +98,22 @@ const projects = [
     },
     {
         "name": "BrainFlix",
-        "role": "Front End Developer",
+        "role": "Full Stack Developer",
         "organization": "Self-Project",
         "description": "Developed an interactive and user-friendly video streaming platform using SCSS, JavaScript, and HTML. Focused on delivering a seamless user experience with a responsive layout that adapts to various devices. The platform features a home page with a list of videos, a video details page with comments, and a video upload page. Implemented dynamic functionalities such as video playback, comment posting, and video uploads, enhancing the overall user engagement.",
         "images": [brainFlixImage1, brainFlixImage2, brainFlixImage3, brainFlixImage4,brainFlixImage5,brainFlixImage6],
         "URL": "https://github.com/RuthBhatti/ruth-bhatti-brainflix.git",
         "backend": "https://github.com/RuthBhatti/ruth-bhatti-brainflix-api",
+        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
+    },
+    {
+        "name": "Hackathon Jeopardy Game",
+        "role": "Front End Engineer",
+        "organization": "BrainStation Hackathon",
+        "description": "Developed an engaging Jeopardy game application using React, SCSS, and JavaScript. The game features a dynamic board with categories and questions, where users can select and answer questions that appear in a modal. Focused on delivering an intuitive and responsive user interface. Collaborated with a back-end engineer to integrate the game's API.",
+        "images": [jeopardyImage1, jeopardyImage2, jeopardyImage3, jeopardyImage4, jeopardyImage5],
+        "URL": "https://github.com/RuthBhatti/hackathon-2-frontend.git",
+        "backend": "https://github.com/kirk-en/hackathon-jeopardy-api.git",
         "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
     }
 ];
