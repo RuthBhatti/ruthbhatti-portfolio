@@ -63,7 +63,7 @@ const projects = [
     {
         name: "PawVoyage",
         role: "Full Stack Developer",
-        organization: "BrainStation",
+        organization: "Capstone Project",
         description: "Developing a React Native,Node.js,Express,MongoDB mobile application designed to assist pet owners in traveling internationally with their pets by providing a seamless, step-by-step application process for pet visas. Creating a user-friendly interface that guides users through submitting the necessary documentation to relevant departments in the origin and destination countries, ensuring approval without any hassle. Implementing a backend API to simulate form submissions to government agencies and ensure data persistence. Enhancing the app to support all animals that can travel in future updates, not just dogs. Acquired proficiency in React Native within two weeks to effectively develop this application.",
         images: [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15],
         URL: "https://github.com/RuthBhatti/PawVage",
