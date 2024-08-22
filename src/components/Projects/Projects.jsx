@@ -58,6 +58,8 @@ import jeopardyImage5 from '../../../src/assets/images/Jeopardy/Jeopardy-5.png'
 
 import githubLogo from '../../assets/images/github-logo.png';
 import linkedinLogo from '../../assets/images/linkedin-logo.png';
+import backendlogo from '../../assets/images/backend-logo.png';
+
 
 const projects = [
     {
@@ -88,33 +90,33 @@ const projects = [
         linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     },
     {
-        "name": "BandSite",
-        "role": "Front End Developer",
-        "organization": "Self-Project",
-        "description": "Developed an engaging and responsive band website, utilizing SCSS, HTML, CSS, and JavaScript. Focused on delivering an immersive user experience through a visually captivating layout that is fully responsive across various devices. The website features sections such as Biography, Shows, and a Photo Gallery, enriched with dynamic content and interactive elements. Enhanced user interaction with smooth hover effects and transitions, ensuring a cohesive and enjoyable browsing experience.",
-        "images": [bandSiteImage1, bandSiteImage2, bandSiteImage3, bandSiteImage4, bandSiteImage5, bandSiteImage6],
-        "URL": "https://github.com/RuthBhatti/ruth-bhatti-bandsite",
-        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
+        name: "BandSite",
+        role: "Front End Developer",
+        organization: "Self-Project",
+        description: "Developed an engaging and responsive band website, utilizing SCSS, HTML, CSS, and JavaScript. Focused on delivering an immersive user experience through a visually captivating layout that is fully responsive across various devices. The website features sections such as Biography, Shows, and a Photo Gallery, enriched with dynamic content and interactive elements. Enhanced user interaction with smooth hover effects and transitions, ensuring a cohesive and enjoyable browsing experience.",
+        images: [bandSiteImage1, bandSiteImage2, bandSiteImage3, bandSiteImage4, bandSiteImage5, bandSiteImage6],
+        URL: "https://github.com/RuthBhatti/ruth-bhatti-bandsite",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     },
     {
-        "name": "BrainFlix",
-        "role": "Full Stack Developer",
-        "organization": "Self-Project",
-        "description": "Developed an interactive and user-friendly video streaming platform using SCSS, JavaScript, and HTML. Focused on delivering a seamless user experience with a responsive layout that adapts to various devices. The platform features a home page with a list of videos, a video details page with comments, and a video upload page. Implemented dynamic functionalities such as video playback, comment posting, and video uploads, enhancing the overall user engagement.",
-        "images": [brainFlixImage1, brainFlixImage2, brainFlixImage3, brainFlixImage4,brainFlixImage5,brainFlixImage6],
-        "URL": "https://github.com/RuthBhatti/ruth-bhatti-brainflix.git",
-        "backend": "https://github.com/RuthBhatti/ruth-bhatti-brainflix-api",
-        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
+        name: "BrainFlix",
+        role: "Full Stack Developer",
+        organization: "Self-Project",
+        description: "Developed an interactive and user-friendly video streaming platform using SCSS, JavaScript, and HTML. Focused on delivering a seamless user experience with a responsive layout that adapts to various devices. The platform features a home page with a list of videos, a video details page with comments, and a video upload page. Implemented dynamic functionalities such as video playback, comment posting, and video uploads, enhancing the overall user engagement.",
+        images: [brainFlixImage1, brainFlixImage2, brainFlixImage3, brainFlixImage4, brainFlixImage5, brainFlixImage6],
+        URL: "https://github.com/RuthBhatti/ruth-bhatti-brainflix.git",
+        backend: "https://github.com/RuthBhatti/ruth-bhatti-brainflix-api",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     },
     {
-        "name": "Hackathon Jeopardy Game",
-        "role": "Front End Engineer",
-        "organization": "BrainStation Hackathon",
-        "description": "Developed an engaging Jeopardy game application using React, SCSS, and JavaScript. The game features a dynamic board with categories and questions, where users can select and answer questions that appear in a modal. Focused on delivering an intuitive and responsive user interface. Collaborated with a back-end engineer to integrate the game's API.",
-        "images": [jeopardyImage1, jeopardyImage2, jeopardyImage3, jeopardyImage4, jeopardyImage5],
-        "URL": "https://github.com/RuthBhatti/hackathon-2-frontend.git",
-        "backend": "https://github.com/kirk-en/hackathon-jeopardy-api.git",
-        "linkedinURL": "https://www.linkedin.com/in/ruth-bhatti/"
+        name: "Hackathon Jeopardy Game",
+        role: "Front End Engineer",
+        organization: "BrainStation Hackathon",
+        description: "Developed an engaging Jeopardy game application using React, SCSS, and JavaScript. The game features a dynamic board with categories and questions, where users can select and answer questions that appear in a modal. Focused on delivering an intuitive and responsive user interface. Collaborated with a back-end engineer to integrate the game's API.",
+        images: [jeopardyImage1, jeopardyImage2, jeopardyImage3, jeopardyImage4, jeopardyImage5],
+        URL: "https://github.com/RuthBhatti/hackathon-2-frontend.git",
+        backend: "https://github.com/kirk-en/hackathon-jeopardy-api.git",
+        linkedinURL: "https://www.linkedin.com/in/ruth-bhatti/"
     }
 ];
 
